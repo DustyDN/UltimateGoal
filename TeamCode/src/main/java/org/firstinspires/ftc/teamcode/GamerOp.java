@@ -58,7 +58,6 @@ public class GamerOp extends OpMode {
         RightRear .setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
     }
-
 //------------------------------OpMode------------------------------------------------------------\\
 
     @Override
@@ -165,6 +164,10 @@ public class GamerOp extends OpMode {
         }else if (gamepad2.dpad_left)
         {
             ShootAngle.setPosition(.75);
+        }
+        {
+            if (gamepad2.x);
+            Shooter.setPower(-.75);
         }
 
 
